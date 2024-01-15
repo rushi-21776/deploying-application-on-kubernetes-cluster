@@ -32,3 +32,16 @@ Step 3:-
 Check if there are 3 pods present as we have set the replication to 3.
 
 Step 4:- 
+Now create a service.yml file. The file is present in the repo.
+#vi service.yml
+#kubectl apply -f service.yml
+#kubectl get svc
+#minikube service <service-name> --url
+This will give you the access URL for the application. Check the application with your URl
+#curl -L http://0.0.0.0:30007
+Add the IP into the /etc/hosts file
+#vi /etc/hosts
+0.0.0.0 todoapp.com
+
+Check the application with the domain name
+#curl -L http://todoapp.com:30007
