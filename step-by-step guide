@@ -1,1 +1,6 @@
-Hii
+Below given are the following steps to deploy your application
+Step 1:- Setup and Manage Docker Container for NodeJS Application into Kubernetes Pods
+Step 2:- Managed deployment, Replication, auto-healing, and auto-scaling for kubernetes cluster.
+Step 3:- Managed Network and Services with Host
+
+Step 1:- 
