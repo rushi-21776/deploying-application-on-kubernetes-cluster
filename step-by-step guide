@@ -1,6 +1,14 @@
-Below given are the following steps to deploy your application
-Step 1:- Setup and Manage Docker Container for NodeJS Application into Kubernetes Pods
-Step 2:- Managed deployment, Replication, auto-healing, and auto-scaling for kubernetes cluster.
-Step 3:- Managed Network and Services with Host
+Below given are the following steps to deploy your application. In this case I will be using minikube.
+Step 1:- Setup machine and install minikube and pulling code from git
+Step 2:- Setup and Manage Docker Container for NodeJS Application into Kubernetes Pods
+Step 3:- Managed deployment, Replication, auto-healing, and auto-scaling for kubernetes cluster.
+Step 4:- Managed Network and Services with Host
 
 Step 1:- 
+Installing minikube. Follow the given link https://minikube.sigs.k8s.io/docs/start/
+#sudo apt update
+#sudo apt install docker.io
+#sudo usermod -a -G docker $USER && newgrp docker
+#sudo snap install kubectl --classic
+#minikube start --driver=docker
+#git clone 
