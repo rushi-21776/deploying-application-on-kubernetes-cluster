@@ -11,4 +11,24 @@ Installing minikube. Follow the given link https://minikube.sigs.k8s.io/docs/sta
 #sudo usermod -a -G docker $USER && newgrp docker
 #sudo snap install kubectl --classic
 #minikube start --driver=docker
-#git clone 
+#git clone https://github.com/rushi-21776/deploying-application-on-kubernetes-cluster.git
+
+Step 2:- 
+docker build -t rushikesh21776/todoapp:latest .
+docker run -d -p 8000:8000 rushikesh21776/todoapp:latest
+Push the docker image
+#docker push rushikesh21776/todoapp:latest
+Now create pod.yml file. The file is present in the repo.
+#vi pod.yml
+#kubectl apply -f pod.yml
+#kubectl get pods
+
+Step 3:- 
+#Write a deployment.yml file. The file is present in the repo.
+#vi deployment.yml
+#kubectl apply -f deployment.yml
+#kubectl get deployments
+#kubectl get pods
+Check if there are 3 pods present as we have set the replication to 3.
+
+Step 4:- 
